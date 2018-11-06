@@ -7,4 +7,12 @@ contract Greetings{
     contructor() public {
         message = "Ok!";
     } 
+
+    function setGreeting(string _message) public {
+        message = _message;
+    }
+
+    function getGreeting() public view returns (string) {
+        return message;
+    }
 }
